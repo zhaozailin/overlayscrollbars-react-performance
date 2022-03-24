@@ -47,6 +47,10 @@ export class OverlayScrollbarsComponent extends Component<OverlayScrollbarsCompo
         }
     }
 
+    shouldComponentUpdate(nextProps: Readonly<OverlayScrollbarsComponentProps>, nextState: Readonly<OverlayScrollbarsComponentState>, nextContext: any): boolean {
+        return false;
+    }
+
     render() {
         const {
             options,
